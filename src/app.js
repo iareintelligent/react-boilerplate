@@ -1,16 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 
-const Layout = props => {
-    return (
-        <div>
-            <p>header</p>
-            {props.children}
-            <p>footer</p>
-        </div>
-    );
-};
+const ExpenseDashboardPage = () => (
+    <div>This is from my Dashboard component</div>
+);
 
-ReactDOM.render(<p>This is my boilerplate</p>, document.getElementById("app"));
+const AddExpensePage = () => <div>This is from my Add Expense component</div>;
+
+const EditExpensePage = () => <div>This is my Edit Expense Component</div>;
+
+const HelpPage = () => <div>This is my Help component</div>;
+
+const NotFoundPage = () => <div>404! - <a href="/">Go Home</a></div>;
+
+const routes = (
+    <BrowserRouter>
+        <div>
+            <Switch>
+                <Route path="/" component={ExpenseDashboardPage} exact={true} />
+                <Route path="/create" component={AddExpensePage} exact={true} />
+                <Route path="/edit" component={EditExpensePage} exact={true} />
+                <Route path="/help" component={HelpPage} exact={true} />
+                <Route component={NotFoundPage} />
+            </Switch>
+        </div>
+    </BrowserRouter>
+);
+
+ReactDOM.render(routes, document.getElementById("app"));
