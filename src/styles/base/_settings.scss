@@ -1,0 +1,19 @@
+$off-black: #20222b;
+$off-white: #a5afd7;
+$blue: #3c4251;
+$dark-blue: #333745;
+$light-blue: #464b5e;
+$purple: #8357c5;
+$white: #fff;
+
+$md-size: 1.6rem;
+$sm-size: 0.75 * $md-size;
+$lg-size: 2 * $md-size;
+$xl-size: 3 * $md-size;
+
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+$desktop-breakpoint: 45rem;

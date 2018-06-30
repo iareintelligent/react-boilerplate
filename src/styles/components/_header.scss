@@ -1,0 +1,20 @@
+.header {
+    background: $off-black;
+    color: white;
+    margin-bottom: $md-size;
+    padding: $md-size 0;
+    &__title {
+        font-size: $lg-size;
+        margin: 0;
+    }
+    &__subtitle {
+        color: $off-white;
+        font-size: $md-size;
+        font-weight: 500;
+        margin: 0;
+    }
+    @media (mid-width: $desktop-breakpoint) {
+        margin-bottom: $xl-size;
+    }
+}
+// BEM
