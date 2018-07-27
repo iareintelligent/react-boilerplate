@@ -5,13 +5,36 @@ const Header = () => (
     <header>
         <h1>Expensify</h1>
         <nav>
-            <NavLink exact={true} activeClassName="is-active" to="/">
+            <NavLink
+                exact={true}
+                className="mr-3"
+                activeClassName="is-active"
+                to="/"
+            >
                 Dashboard
             </NavLink>
-            <NavLink exact={true} activeClassName="is-active" to="/create">
+            <NavLink
+                exact={true}
+                className="mr-3"
+                activeClassName="is-active"
+                to="/create"
+            >
                 Create Expense
             </NavLink>
-            <NavLink exact={true} activeClassName="is-active" to="/help">
+            <NavLink
+                exact={true}
+                className="mr-3"
+                activeClassName="is-active"
+                to="/edit"
+            >
+                Edit Expense
+            </NavLink>
+            <NavLink
+                exact={true}
+                className="mr-3"
+                activeClassName="is-active"
+                to="/help"
+            >
                 Help
             </NavLink>
         </nav>
