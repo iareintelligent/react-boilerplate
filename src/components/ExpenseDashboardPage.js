@@ -1,7 +1,14 @@
 import React from "react";
+import ExpenseList from "./ExpenseList";
+import ExpenseListFilters from "./ExpenseListFilters";
+import SortByDropdown from "./SortByDropdown";
 
 const ExpenseDashboardPage = () => (
-    <div>This is from my Dashboard component!</div>
+    <div>
+        <ExpenseListFilters />
+        <SortByDropdown />
+        <ExpenseList />
+    </div>
 );
 
 export default ExpenseDashboardPage;
